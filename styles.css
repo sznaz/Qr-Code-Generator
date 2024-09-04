@@ -1,0 +1,91 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+#qr-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 842px;
+  width: 595px;
+  background-color: rgba(244, 199, 42, 0.09);
+}
+
+#qrcode img {
+  width: 327px;
+  height: 327px;
+  margin-top: 26px;
+
+  background-color: inherit;
+}
+
+p {
+  font-size: 20px;
+  font-weight: 600;
+}
+header {
+  background-color: rgb(232, 255, 255);
+  padding: 10px 30px;
+}
+.logoImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 290.86px;
+  height: 297.37px;
+  opacity: 20%;
+}
+.qr-div {
+  margin-top: 4rem;
+  position: absolute;
+  z-index: 2;
+  background-color: rgba(244, 199, 42, 0.94);
+  width: 409px;
+  height: 583.72px;
+  border-radius: 20px;
+  border: 1px solid black;
+  box-shadow: 0 18px 41px 0 rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.font-top {
+  font-size: 15px;
+  font-weight: 400;
+  margin-top: 30px;
+}
+.font-down {
+  margin-top: 30px;
+  color: #c11822;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 0.01%;
+}
+.logoContainer {
+  position: absolute;
+  z-index: 11;
+  top: 10.5%;
+  background-color: white;
+  border-radius: 50%;
+  padding: 15px;
+}
+.simcare-logo {
+  width: 113.72px;
+  height: 110.03px;
+}
+@media print {
+  #qr-div {
+    box-shadow: 0 18px 41px 0 rgba(0, 0, 0, 0.25);
+  }
+}
